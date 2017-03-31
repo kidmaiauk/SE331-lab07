@@ -1,5 +1,7 @@
 package camt.cbsd.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * Created by Dto on 3/11/2017.
  */
@@ -13,6 +15,10 @@ public class Student {
     boolean feature;
     int penAmount;
     String description;
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    public Student() {
+    }
 
     public Student(long id, String studentId, String name, String surname, double gpa, String image, boolean feature, int penAmount, String description) {
         this.id = id;

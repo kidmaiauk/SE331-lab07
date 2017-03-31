@@ -1,6 +1,7 @@
 server:
   baseUrl: http://localhost:3000/
   imageUrl: images/
+  imageServerDir: C:/images/lab07/
 ---
 spring:
   profiles: local
@@ -13,3 +14,4 @@ spring:
 server:
   baseUrl: https://s3-ap-southeast-1.amazonaws.com/se331/
   imageUrl: pics/
+---
